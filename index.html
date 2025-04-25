@@ -1,92 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Markdown ↔ HTML Converter</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-blue-500 flex items-center justify-center text-white font-sans">
-      
-  <div class="text-center px-4 max-w-3xl mt-56">
-    
+<body class="bg-blue-500 text-white font-sans">
+  <!-- Main content container (now only for the hero section) -->
+  <div class="text-center px-4 max-w-3xl mx-auto mt-52">
     <!-- Hero Title -->
-    <div class="w-full flex items-center justify-center mb-20">
-        <h1 class="text-3xl md:text-5xl font-bold mb-6 whitespace-nowrap">
-            Convert Between 
-            <span class="relative inline-block 
-                         before:content-[''] before:absolute 
-                         before:-top-2 before:-bottom-2 
-                         before:-left-1 before:-right-1 
-                         before:bg-teal-400 before:rotate-[-2deg] 
-                         before:rounded before:-z-10">
-              Markdown & HTML
-            </span> 
-            Instantly
-        </h1>
+    <div class="w-full flex items-center justify-center mb-24">
+      <h1 class="text-3xl md:text-5xl font-bold mb-6 whitespace-nowrap">
+        Convert Between 
+        <span class="relative inline-block 
+                     before:content-[''] before:absolute 
+                     before:-top-2 before:-bottom-2 
+                     before:-left-1 before:-right-1 
+                     before:bg-teal-400 before:rotate-[-2deg] 
+                     before:rounded before:-z-10">
+          Markdown & HTML
+        </span> 
+        Instantly
+      </h1>
     </div>
-      
-      
-
+    
     <!-- Subtitle -->
-    <p class="text-lg md:text-xl text-white/80 mb-20">
+    <p class="text-lg md:text-xl text-white/80 mb-24">
       Your simple, fast and accurate 
       <span class="text-teal-300">online converter</span> — for writers, developers, and everyone in between.
     </p>
 
     <!-- Buttons -->
-    <div class="flex justify-center gap-10 flex-wrap" mb-100>
-        <a href="/convert" class="bg-gradient-to-r from-blue-300 to-teal-300 text-blue-800 font-semibold px-6 py-3 rounded-full hover:scale-105 transition">
-            Start Converting Now
-        </a>
-     
+    <div class="flex justify-center gap-10 flex-wrap mb-100">
+      <a href="/convert" class="bg-gradient-to-r from-blue-300 to-teal-300 text-blue-800 font-semibold px-6 py-3 rounded-full hover:scale-105 transition">
+        Start Converting Now
+      </a>
       <a href="#learn-more" class="border-2 border-teal-300 text-teal-300 font-semibold px-6 py-3 rounded-full hover:bg-teal-300 hover:text-blue-800 transition">
         Learn More
       </a>
-
     </div>
-
-    <div id="learn-more" class="mt-52">
-        <!-- Hero Title -->
-        <div class="w-full flex justify-center mb-20">
-          <h1 class="text-3xl md:text-5xl font-bold mb-6 whitespace-nowrap text-white">
-            .md <span class="text-teal-300">↔</span> .html
-          </h1>
-        </div>
-        
-        <h2 class="text-xl md:text-2xl font-bold text-white mb-12">Key Features</h2>
-        <!-- Key Features Boxes -->
-        <div class="flex justify-center gap-8 mb-20">
-          <!-- Live Preview -->
-          <div class="border-2 border-teal-300 rounded-lg p-6 w-1/3 text-center">
-            <h3 class="text-teal-300 text-xl font-semibold mb-4">Live Preview</h3>
-            <p class="text-white">Instantly view your Markdown or HTML output as you edit it, no need to refresh the page.</p>
-          </div>
-    
-          <!-- Convert Both Ways -->
-          <div class="border-2 border-teal-300 rounded-lg p-6 w-1/3 text-center">
-            <h3 class="text-teal-300 text-xl font-semibold mb-4">Convert Both Ways</h3>
-            <p class="text-white">Easily switch between Markdown and HTML formats with just a click.</p>
-          </div>
-    
-          <!-- Download/Export -->
-          <div class="border-2 border-teal-300 rounded-lg p-6 w-1/3 text-center">
-            <h3 class="text-teal-300 text-xl font-semibold mb-4">Download/Export</h3>
-            <p class="text-white">Download or export your converted file in the desired format with ease.</p>
-          </div>
-        </div>
-    
-        <!-- Footer -->
-        <footer class="bg-teal-300 py-6 mt-20 text-center">
-          <p class="text-white">
-            Made with ❤️ by <a href="https://julyw.com" class="text-blue-800 font-semibold hover:underline">July Wu</a>.
-          </p>
-          <p class="text-white mt-2">
-            This project is open source, if you find it helpful, give a ★ and feel free to make contributions! 
-            <a href="#" class="text-blue-800 font-semibold hover:underline">Open Source</a>
-          </p>
-        </footer>
-      </div>
   </div>
+
+  <!-- Learn More section - outside the max-w-3xl container -->
+  <div id="learn-more" class="mt-52 px-4">
+    <!-- Hero Title -->
+    <div class="w-full flex justify-center mb-20">
+      <h1 class="text-3xl md:text-5xl font-bold mb-6 whitespace-nowrap text-white">
+        .md <span class="text-teal-300"> ↔ </span> .html
+      </h1>
+    </div>
+    
+    <h2 class="text-xl md:text-2xl font-bold text-white mb-16 text-center">Key Features</h2>
+
+    <!-- Key Features Boxes - now with full width potential -->
+    <div class="flex justify-center gap-8 mb-40 mx-auto max-w-6xl">
+      <!-- Live Preview -->
+      <div class="border-2 border-teal-300 rounded-lg p-6 flex-1 text-left transition transform hover:-translate-y-1">
+        <h3 class="text-teal-300 text-3xl font-semibold mb-8">⚡️</h3>
+        <h3 class="text-teal-300 text-xl font-semibold mb-4">Live Preview</h3>
+        <p class="text-white">Instantly view your Markdown or HTML output as you edit it, no need to refresh the page.</p>
+      </div>
+
+      <!-- Convert Both Ways -->
+      <div class="border-2 border-teal-300 rounded-lg p-6 flex-1 text-left transition transform hover:-translate-y-2">
+        <h3 class="text-teal-300 text-3xl font-semibold mb-8">🔁</h3>
+        <h3 class="text-teal-300 text-xl font-semibold mb-4">Convert Both Ways</h3>
+        <p class="text-white">Easily switch between Markdown and HTML formats with just a click.</p>
+      </div>
+
+      <!-- Download/Export -->
+      <div class="border-2 border-teal-300 rounded-lg p-6 flex-1 text-left transition transform hover:-translate-y-1">
+        <h3 class="text-teal-300 text-3xl font-semibold mb-8">💾</h3>
+        <h3 class="text-teal-300 text-xl font-semibold mb-4">Download/Export</h3>
+        <p class="text-white">Download or export your converted file in the desired format with ease.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full-Width Footer - outside all restrictive containers -->
+  <footer class="bg-teal-300 py-6 w-full">
+    <div class="text-center text-white px-4 max-w-7xl mx-auto">
+      <p>
+        Made with ❤️ by 
+        <a href="https://julyw.com" class="text-blue-800 font-semibold hover:underline">July Wu</a>.
+      </p>
+      <p class="mt-2">
+        This project is open source, if you find it helpful, give a ★ and feel free to make contributions! 
+        <a href="#" class="text-blue-800 font-semibold hover:underline">Open Source</a>
+      </p>
+    </div>
+  </footer>
 </body>
 </html>
