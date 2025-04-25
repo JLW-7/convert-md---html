@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Convert Now – Markdown ↔ HTML</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-500 text-white font-sans min-h-screen">
+  <!-- Top Nav -->
+  <div class="absolute top-4 right-4">
+    <a href="/" class="bg-teal-300 text-blue-800 font-semibold px-4 py-2 rounded-2xl shadow hover:scale-105 transition">
+      ← Back
+    </a>
+  </div>
+
+  <!-- Main Container -->
+  <div class="max-w-6xl mx-auto mt-20 px-6">
+    <!-- Title -->
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-24">
+        <span class="text-teal-300">Marky</span> - Markdown <span class="text-teal-300">↔</span> HTML Converter
+    </h1>
+
+    <div class="mb-10 flex justify-center gap-4 items-center">
+        <label for="convertDirection" class="block text-lg font-semibold mb-2 text-white">Convert from</label>
+        <select id="convertDirection" class="text-blue-800 text-base rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-400">
+          <option value="md-to-html">Markdown → HTML</option>
+          <option value="html-to-md">HTML → Markdown</option>
+        </select>
+    </div>
+
+    <!-- Converter UI -->
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Markdown Input -->
+      <div class="flex flex-col bg-blue-400 p-6 rounded-2xl shadow-md">
+        <label for="markdown" class="text-lg font-semibold mb-2 text-teal-100">Markdown Input</label>
+        <textarea id="markdown" placeholder="Type or paste Markdown here..." class="p-4 rounded-lg text-sm h-72 resize-none text-blue-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-300"></textarea>
+      </div>
+
+      <!-- HTML Output -->
+      <div class="flex flex-col bg-blue-400 p-6 rounded-2xl shadow-md">
+        <label for="html" class="text-lg font-semibold mb-2 text-teal-100">HTML Output</label>
+        <textarea id="html" placeholder="Converted HTML will appear here..." readonly class="p-4 rounded-lg text-sm h-72 resize-none text-blue-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-300"></textarea>
+      </div>
+    </div>
+
+    <!-- Export buttons + Clear button -->
+    <div class="flex flex-wrap justify-center gap-6 mt-12">
+      <button class="bg-gradient-to-r from-blue-300 to-teal-300 text-blue-800 font-bold px-6 py-3 rounded-full hover:scale-105 transition shadow">
+        Download HTML file
+      </button>
+      <button class="bg-gradient-to-r from-teal-300 to-blue-300 text-blue-800 font-bold px-6 py-3 rounded-full hover:scale-105 transition shadow">
+        Download Markdown file
+      </button>
+      <button class="bg-white text-blue-800 border-2 border-blue-800 font-semibold px-6 py-3 rounded-full hover:bg-blue-100 transition">
+        Clear
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-teal-300 px-4 py-6 w-full mt-24">
+    <div class="text-center text-blue-500 px-4 max-w-7xl mx-auto">
+      <p>
+        Made with ❤️ by <a href="https://julyw.com" class="text-blue-800 font-semibold hover:underline">July Wu</a>. This project is 
+        <a href="https://github.com/JLW-7/convert-md---html" class="text-blue-800 font-semibold hover:underline">open source</a> if you find it helpful, give a ★ and feel free to make contributions!.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
