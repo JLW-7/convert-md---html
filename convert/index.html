@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Convert Now – Markdown ↔ HTML</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/turndown/dist/turndown.min.js"></script>
 </head>
 <body class="bg-blue-500 text-white font-sans min-h-screen">
   <!-- Top Nav -->
@@ -17,9 +19,14 @@
   <!-- Main Container -->
   <div class="max-w-6xl mx-auto mt-20 px-6">
     <!-- Title -->
-    <h1 class="text-4xl md:text-5xl font-bold text-center mb-24">
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-12">
         <span class="text-teal-300">Marky</span> - Markdown <span class="text-teal-300">↔</span> HTML Converter
     </h1>
+
+    <p class="text-lg md:text-2xl text-white/80 mb-24 text-center">
+      Converts Markdown/HTML
+      <span class="text-teal-300">instantly</span> as you type!
+    </p>
 
     <div class="mb-10 flex justify-center gap-4 items-center">
         <label for="convertDirection" class="block text-lg font-semibold mb-2 text-white">Convert from</label>
@@ -33,15 +40,31 @@
     <div class="grid md:grid-cols-2 gap-8">
       <!-- Markdown Input -->
       <div class="flex flex-col bg-blue-400 p-6 rounded-2xl shadow-md">
-        <label for="markdown" class="text-lg font-semibold mb-2 text-teal-100">Markdown Input</label>
-        <textarea id="markdown" placeholder="Type or paste Markdown here..." class="p-4 rounded-lg text-sm h-72 resize-none text-blue-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-300"></textarea>
+        <div class="flex justify-between items-center mb-2">
+          <label class="text-lg font-semibold text-teal-100">Input</label>
+          <div class="flex space-x-2 text-sm font-semibold text-blue-800 bg-teal-200 rounded-xl p-1">
+            <button id="showCode" class="px-3 py-1 rounded-xl bg-white">Code</button>
+            <button id="showPreview" class="px-3 py-1 rounded-xl hover:bg-white">Preview</button>
+          </div>
+        </div>
+        
+        <!-- Markdown Textarea -->
+        <textarea id="markdown" placeholder="Type or paste input here..." class="p-4 rounded-lg text-sm h-72 resize-none text-blue-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-300"></textarea>
+
+        <!-- Rendered Preview (Hidden by Default) -->
+        <div id="preview" class="p-4 rounded-lg text-sm h-72 overflow-auto text-blue-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-300 hidden"></div>
       </div>
 
       <!-- HTML Output -->
       <div class="flex flex-col bg-blue-400 p-6 rounded-2xl shadow-md">
-        <label for="html" class="text-lg font-semibold mb-2 text-teal-100">HTML Output</label>
-        <textarea id="html" placeholder="Converted HTML will appear here..." readonly class="p-4 rounded-lg text-sm h-72 resize-none text-blue-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-300"></textarea>
+        <label for="html" class="text-lg font-semibold mb-2 text-teal-100 flex justify-between items-center">
+          Output
+          <!-- Copy Button -->
+          <button id="copyOutputBtn" class="text-sm text-teal-300 hover:text-teal-400 transition">Copy Code</button>
+        </label>
+        <textarea id="html" placeholder="Output code will appear here..." readonly class="p-4 rounded-lg text-sm h-72 resize-none text-blue-900 bg-white focus:outline-none focus:ring-2 focus:ring-teal-300"></textarea>
       </div>
+
     </div>
 
     <!-- Export buttons + Clear button -->
@@ -52,7 +75,7 @@
       <button class="bg-gradient-to-r from-teal-300 to-blue-300 text-blue-800 font-bold px-6 py-3 rounded-full hover:scale-105 transition shadow">
         Download Markdown file
       </button>
-      <button class="bg-white text-blue-800 border-2 border-blue-800 font-semibold px-6 py-3 rounded-full hover:bg-blue-100 transition">
+      <button id="clearBtn" class="bg-white text-blue-800 border-2 border-blue-800 font-semibold px-6 py-3 rounded-full hover:bg-blue-100 transition">
         Clear
       </button>
     </div>
@@ -68,5 +91,8 @@
       </p>
     </div>
   </footer>
+
+  <!-- External JavaScript File -->
+  <script src="script.js"></script>
 </body>
 </html>
