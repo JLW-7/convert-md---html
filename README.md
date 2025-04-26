@@ -55,8 +55,10 @@ If you like Marky, help it grow! 🌱
 
 ## License
 
-MIT License — free for personal and commercial use!
+This project is licensed under the [MIT License](LICENSE).
 
 ---
+
+Made with ❤️ by [July Wu](https://github.com/JLW-7)
 
 ### 🌟 Give Marky a Star — Let's make Markdown easy for everyone!
