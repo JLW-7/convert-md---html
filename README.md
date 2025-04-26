@@ -5,7 +5,7 @@
 
 ---
 
-## 🚀 About Marky
+## About Marky
 
 Marky is a lightweight, stylish Markdown to HTML (and HTML to Markdown) converter built with **HTML**, **TailwindCSS**, and **JavaScript**.
 
@@ -13,7 +13,7 @@ Whether you're a developer, writer, or just someone who needs a quick converter,
 
 ---
 
-## ✨ Features
+## Features
 
 - 🔄 **Two-Way Conversion**: Convert from Markdown ➡️ HTML *or* HTML ➡️ Markdown instantly.
 - ⚡ **Real-Time Output**: Changes appear immediately as you type.
@@ -34,7 +34,7 @@ Whether you're a developer, writer, or just someone who needs a quick converter,
 
 ___
 
-## 🤝 Contributions
+## Contributions
 
 If you like Marky, help it grow! 🌱
 
@@ -44,7 +44,7 @@ If you like Marky, help it grow! 🌱
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - HTML5 for basic website layout
 - TailwindCSS for styling
@@ -53,7 +53,7 @@ If you like Marky, help it grow! 🌱
 
 ---
 
-## 📜 License
+## License
 
 MIT License — free for personal and commercial use!
 
