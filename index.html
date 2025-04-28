@@ -9,16 +9,16 @@
 </head>
 <body class="bg-blue-500 text-white font-sans">
   <div class="absolute top-4 right-4 flex items-center gap-2">
-    <a href="https://github.com/JLW-7/convert-md---html" target="_blank" class="flex items-center bg-blue-800 text-white font-semibold py-2 px-4 rounded-2xl shadow-md hover:scale-105 transition">
-      <i class="fab fa-github mr-2"></i> GitHub Source Code
+    <a href="https://github.com/JLW-7/convert-md---html" target="_blank" class="flex items-center bg-blue-800 text-white font-semibold py-2 px-4 rounded-2xl shadow-md hover:scale-105 transition text-sm sm:text-base">
+      <i class="fab fa-github mr-2"></i> <span class="hidden sm:inline">GitHub Source Code</span>
     </a>
   </div>
   
   <!-- Main content container (now only for the hero section) -->
-  <div class="text-center px-4 max-w-3xl mx-auto mt-52">
+  <div class="text-center px-4 max-w-3xl mx-auto mt-20 sm:mt-32 md:mt-52">
     <!-- Hero Title -->
-    <div class="w-full flex items-center justify-center mb-24">
-      <h1 class="text-3xl md:text-5xl font-bold mb-6 whitespace-nowrap">
+    <div class="w-full flex items-center justify-center mb-12 sm:mb-24">
+      <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 whitespace-normal sm:whitespace-nowrap">
         Convert Between 
         <span class="relative inline-block 
                      before:content-[''] before:absolute 
@@ -33,68 +33,69 @@
     </div>
     
     <!-- Subtitle -->
-    <p class="text-lg md:text-xl text-white/80 mb-24">
+    <p class="text-base sm:text-lg md:text-xl text-white/80 mb-12 sm:mb-24">
+      <span class="text-teal-300 font-semibold">Marky: </span>
       Your simple, fast and accurate 
       <span class="text-teal-300">online converter</span> — for writers, developers, and everyone in between.
     </p>
 
     <!-- Buttons -->
-    <div class="flex justify-center gap-10 flex-wrap mb-100">
-      <a href="/convert" class="bg-gradient-to-r from-blue-300 to-teal-300 text-blue-800 font-semibold px-6 py-3 rounded-full hover:scale-105 transition">
+    <div class="flex justify-center gap-4 sm:gap-10 flex-wrap mb-20 sm:mb-100">
+      <a href="/convert" class="bg-gradient-to-r from-blue-300 to-teal-300 text-blue-800 font-semibold px-4 py-2 sm:px-6 sm:py-3 rounded-full hover:scale-105 transition text-sm sm:text-base">
         Start Converting Now
       </a>
-      <a href="#learn-more" class="border-2 border-teal-300 text-teal-300 font-semibold px-6 py-3 rounded-full hover:bg-teal-300 hover:text-blue-800 transition">
+      <a href="#learn-more" class="border-2 border-teal-300 text-teal-300 font-semibold px-4 py-2 sm:px-6 sm:py-3 rounded-full hover:bg-teal-300 hover:text-blue-800 transition text-sm sm:text-base">
         Learn More
       </a>
     </div>
   </div>
 
   <!-- Learn More section - outside the max-w-3xl container -->
-  <div id="learn-more" class="mt-52 px-4 mb-52">
+  <div id="learn-more" class="mt-20 sm:mt-32 md:mt-52 px-4">
     <!-- Hero Title -->
-    <div class="w-full flex justify-center mb-20">
-      <h1 class="text-3xl md:text-5xl font-bold mb-6 whitespace-nowrap text-white">
+    <div class="w-full flex justify-center mb-12 sm:mb-20">
+      <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 whitespace-nowrap text-white">
         .md <span class="text-teal-300"> ↔ </span> .html
       </h1>
     </div>
     
-    <h2 class="text-xl md:text-2xl font-bold text-white mb-16 text-center">Key Features</h2>
+    <h2 class="text-lg sm:text-xl md:text-2xl font-bold text-white mb-8 sm:mb-16 text-center">Key Features</h2>
 
     <!-- Key Features Boxes - now with full width potential -->
-    <div class="flex justify-center gap-8 mx-auto max-w-6xl">
+    <div class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 mb-20 sm:mb-40 mx-auto max-w-6xl">
       <!-- Live Preview -->
-      <div class="border-2 border-teal-300 rounded-lg p-6 flex-1 text-left transition transform hover:-translate-y-2 hover:drop-shadow-[0_0_5px_#5eead4] hover:shadow-[0_0_5px_#81e6d9]">
-        <h3 class="text-teal-300 text-3xl font-semibold mb-8">⚡️</h3>
-        <h3 class="text-teal-300 text-xl font-semibold mb-4">Live Preview</h3>
-        <p class="text-white">Instantly view your Markdown or HTML output as you edit it, no need to refresh the page.</p>
+      <div class="border-2 border-teal-300 rounded-lg p-4 sm:p-6 flex-1 text-left transition transform hover:-translate-y-2 hover:bg-blue-400 hover:shadow-[0_0_5px_#81e6d9] mb-4 sm:mb-0">
+        <h3 class="text-teal-300 text-2xl sm:text-3xl font-semibold mb-4 sm:mb-8">⚡️</h3>
+        <h3 class="text-teal-300 text-lg sm:text-xl font-semibold mb-2 sm:mb-4">Live Preview</h3>
+        <p class="text-white text-sm sm:text-base">Instantly view your Markdown or HTML output as you edit it, no need to refresh the page.</p>
       </div>
 
       <!-- Convert Both Ways -->
-      <div class="border-2 border-teal-300 rounded-lg p-6 flex-1 text-left transition transform hover:-translate-y-2 hover:drop-shadow-[0_0_5px_#5eead4] hover:shadow-[0_0_5px_#81e6d9]">
-        <h3 class="text-teal-300 text-3xl font-semibold mb-8">🔁</h3>
-        <h3 class="text-teal-300 text-xl font-semibold mb-4">Convert Both Ways</h3>
-        <p class="text-white">Easily switch between Markdown and HTML formats with just a click.</p>
+      <div class="border-2 border-teal-300 rounded-lg p-4 sm:p-6 flex-1 text-left transition transform hover:-translate-y-2 hover:bg-blue-400 hover:shadow-[0_0_5px_#81e6d9] mb-4 sm:mb-0">
+        <h3 class="text-teal-300 text-2xl sm:text-3xl font-semibold mb-4 sm:mb-8">🔁</h3>
+        <h3 class="text-teal-300 text-lg sm:text-xl font-semibold mb-2 sm:mb-4">Convert Both Ways</h3>
+        <p class="text-white text-sm sm:text-base">Easily switch between Markdown and HTML formats with just a click.</p>
       </div>
 
       <!-- Download/Export -->
-      <div class="border-2 border-teal-300 rounded-lg p-6 flex-1 text-left transition transform hover:-translate-y-2 hover:drop-shadow-[0_0_5px_#5eead4] hover:shadow-[0_0_5px_#81e6d9]">
-        <h3 class="text-teal-300 text-3xl font-semibold mb-8">💾</h3>
-        <h3 class="text-teal-300 text-xl font-semibold mb-4">Download/Export</h3>
-        <p class="text-white">Download or export your converted file in the desired format with ease.</p>
+      <div class="border-2 border-teal-300 rounded-lg p-4 sm:p-6 flex-1 text-left transition transform hover:-translate-y-2 hover:bg-blue-400 hover:shadow-[0_0_5px_#81e6d9]">
+        <h3 class="text-teal-300 text-2xl sm:text-3xl font-semibold mb-4 sm:mb-8">💾</h3>
+        <h3 class="text-teal-300 text-lg sm:text-xl font-semibold mb-2 sm:mb-4">Download/Export</h3>
+        <p class="text-white text-sm sm:text-base">Download or export your converted file in the desired format with ease.</p>
       </div>
     </div>
   </div>
 
-  <div class="text-center px-4 mb-40 relative">
-    <h1 class="text-5xl font-bold mb-24 whitespace-nowrap text-white">Ready to Get Started?</h1>
-    <a href="/convert" class="bg-gradient-to-r from-blue-300 to-teal-300 text-blue-800 text-2xl font-semibold px-12 py-6 rounded-2xl border-2 border-blue-800">
+  <div class="text-center px-4 mb-20 sm:mb-40 relative">
+    <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold mb-12 sm:mb-24 whitespace-normal sm:whitespace-nowrap text-white">Ready to Get Started?</h1>
+    <a href="/convert" class="bg-gradient-to-r from-blue-300 to-teal-300 text-blue-800 text-lg sm:text-2xl font-semibold px-6 py-3 sm:px-12 sm:py-6 rounded-xl sm:rounded-2xl border-2 border-blue-800">
       Start Converting Now
     </a>
   </div>
 
   <!-- Full-Width Footer - outside all restrictive containers -->
-  <footer class="bg-teal-300 px-4 py-8 w-full">
-    <div class="text-center text-blue-500 px-4 max-w-7xl mx-auto">
+  <footer class="bg-teal-300 px-4 py-6 sm:py-8 w-full">
+    <div class="text-center text-blue-500 px-4 max-w-7xl mx-auto text-sm sm:text-base">
       <p>
         Made with ❤️ by 
         <a href="https://julyw.com" class="text-blue-800 font-semibold hover:underline">July Wu</a>.
